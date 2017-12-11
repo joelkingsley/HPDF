@@ -25,8 +25,8 @@ def fetchAndDisplay():
 	with urlopen(urlPosts) as conn:
 		pList = json.loads(conn.read().decode())
 
-	resp = requests.get(url=url, params=params)
-	data = json.loads(resp.text)
+	#resp = requests.get(url=url, params=params)
+	#data = json.loads(resp.text)
 			
 	authors = [Author(aList[i]["name"],aList[i]["id"]) for i in range(len(aList))]
 	
@@ -49,8 +49,7 @@ def setCookie():
 def getCookie():
         name = request.cookies.get('name')
         age = request.cookies.get('age')
-        #return render_template("getcookie.html",name=name,age=age)
-        return str("Name: " + name)
+        return render_template("getcookie.html",name=name,age=age)   
 
 @app.route('/robots.txt')
 def deny():
