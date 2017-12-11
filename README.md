@@ -39,5 +39,5 @@ $\Week1> python .\app.py
 
 2. Open http://localhost:8081/ in the web browser.
 
-[1]:http://joelkingsley.wordpress.com/blog
+[1]:https://joelkingsley.wordpress.com/category/hpdf/
 [2]:https://www.python.org/downloads/
